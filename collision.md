@@ -49,6 +49,8 @@ Method: Separating Axis Theorem
 
 ```
 function IsColliding(Poly p1, Poly p2) {
+    
+    // subroutine to project a polygon onto an axis
     Vector2 Projection => (Vector2 axis, Poly p) {
         float min = infinity;
         float max = -infinity;
@@ -59,10 +61,13 @@ function IsColliding(Poly p1, Poly p2) {
         }
         return Vector2(min, max);
     }
+    
+    // subroutine to check if 2 projections overlap
     bool Overlap => (Vector2 a1, Vector2 a2) {
         return (a2.x > a1.x && a2.x < a1.y)
             || (a2.y > a1.x && a2.y < a1.y);
     }
+    
     Vector2[] axesToTest;
     foreach (v in p1, p2)
         axesToTest.push((v - (v + 1)).Perpendicular);
