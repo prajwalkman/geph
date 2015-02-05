@@ -4,13 +4,16 @@ D2: Collision Detection Mathematics
 
 Data structures assumed:
 * Vector2(x, y)
-* 
+* Vector2.Dot(Vector2 other) => x * other.x + y * other.y
+* Vector2.Length => Math.Sqrt(Dot(this))
 
 
 Rectangle-Rectangle collision:
 ------------------------------
 
 Signature: Rect(Vector2 min, Vector2 max)
+
+Method: Check if bounds overlap on both axes
 
 ```
 function IsColliding(Rect r1, Rect r2) {
@@ -28,6 +31,8 @@ Circle-Circle collision:
 
 Signature: Circle(Vector2 centre, float radius)
 
+Method: Check if distance between the centres is less than the sum of the radii
+
 ```
 function IsColliding(Circle c1, Circle c2) {
     float dist = Vector2.length(c2.center - c1.center);
@@ -35,4 +40,14 @@ function IsColliding(Circle c1, Circle c2) {
 }
 ```
 
+Convex-Convex collision:
+------------------------
 
+Signature: Poly(Vector2[] vertices)
+
+Method: Separating Axis Theorem
+
+```
+
+
+```
