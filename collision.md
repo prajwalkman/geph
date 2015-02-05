@@ -12,7 +12,6 @@ Rectangle-Rectangle collision:
 
 Signature: Rect(Vector2 min, Vector2 max)
 
-Pseudocode:
 ```
 function IsColliding(Rect r1, Rect r2) {
     if (r1.min.x < r2.max.x)
@@ -23,4 +22,15 @@ function IsColliding(Rect r1, Rect r2) {
     return false;
 }
 ```
+
+Circle-Circle collision:
+------------------------
+
+Signature: Circle(Vector2 centre, float radius)
+
+```
+function IsColliding(Circle c1, Circle c2) {
+    float dist = Vector2.length(c2.center - c1.center);
+    return (dist < c1.radius + c2.radius);
+}
 
