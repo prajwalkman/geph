@@ -1,4 +1,4 @@
-**Prajwal Manjunath**
+**Prajwal Manjunath** pmanjuna@andrew.cmu.edu 2/5/2015
 
 ***D2: Collision Detection Mathematics***
 
