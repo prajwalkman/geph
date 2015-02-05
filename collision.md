@@ -46,6 +46,7 @@ Convex-Convex collision:
 Signature: Poly(Vector2[] vertices)
 
 Method: Separating Axis Theorem
+
 [ref: http://www.codezealot.org/archives/55]
 
 ```
