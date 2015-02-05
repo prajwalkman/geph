@@ -33,4 +33,6 @@ function IsColliding(Circle c1, Circle c2) {
     float dist = Vector2.length(c2.center - c1.center);
     return (dist < c1.radius + c2.radius);
 }
+```
+
 
