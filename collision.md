@@ -2,7 +2,7 @@
 
 ***D2: Collision Detection Mathematics***
 
-Data structures assumed:
+Data structure:
 * Vector2(x, y)
 * Vector2.Dot(Vector2 other) => x * other.x + y * other.y
 * Vector2.Length => Math.Sqrt(Dot(this))
