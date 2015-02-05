@@ -8,7 +8,6 @@ Data structure:
 * Vector2.Length => Math.Sqrt(Dot(this))
 * Vector2.Perpendicular => Vector2(-y, x)
 
-
 Rectangle-Rectangle collision:
 ------------------------------
 
@@ -36,7 +35,8 @@ Method: Check if distance between the centres is less than the sum of the radii
 
 ```
 function IsColliding(Circle c1, Circle c2) {
-    return Vector2.length(c2.center - c1.center) < c1.radius + c2.radius;
+    float dist = Vector2.length(c2.center - c1.center);
+    return dist < c1.radius + c2.radius;
 }
 ```
 
@@ -46,6 +46,7 @@ Convex-Convex collision:
 Signature: Poly(Vector2[] vertices)
 
 Method: Separating Axis Theorem
+[ref: http://www.codezealot.org/archives/55]
 
 ```
 function IsColliding(Poly p1, Poly p2) {
