@@ -12,9 +12,7 @@ if (Token.Matches(TEXT("UPROPERTY"), ESearchCase::CaseSensitive))
 }
 ```
 
-The `FHeaderParser` class also includes similar functions for compiling other declarations such as `UFUNCTION`, `UINTERFACE`, `UDELEGATE`, etc.
-
-The tool generates one mega cpp file called `{project_name}.generated.cpp` in an `Intermediate` folder, which contains all the generated code for all classes and their members.
+The `FHeaderParser` class also includes similar functions for compiling other declarations such as `UFUNCTION`, `UINTERFACE`, `UDELEGATE`, etc. The tool generates one mega cpp file called `{project_name}.generated.cpp` in an `Intermediate` folder, which contains all the generated code for all classes and their members.
 
 Each `UCLASS` block is converted to a new `UClass* MyClass`, and each `UPROPERTY` gets a new `UProperty* MyObject` member inside it.
 
