@@ -5,14 +5,11 @@ The first step is for the `UnrealHeaderTool` to parse all header files, looking 
 Parsing by `HeaderParser.cpp` in `UnrealHeaderTool`:
 
 ```cpp
-...
 if (Token.Matches(TEXT("UPROPERTY"), ESearchCase::CaseSensitive))
 {
 	CompileVariableDeclaration(AllClasses, Struct, EPropertyDeclarationStyle::UPROPERTY);
-	...
 	CompileVariableDeclaration(AllClasses, TopNode, EPropertyDeclarationStyle::UPROPERTY);
 }
-...
 ```
 
 The `FHeaderParser` class also includes similar functions for compiling other declarations such as `UFUNCTION`, `UINTERFACE`, `UDELEGATE`, etc.
@@ -27,12 +24,9 @@ UClass* Z_Construct_UClass_ABob()
 {
 	OuterClass = ABob::StaticClass();
 	UObjectForceRegistration(OuterClass);
-	...
 	UProperty* NewProp_Phase = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Phase"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(Phase, ABob), 0x0000000000000001);
-	...
 	MetaData->SetValue(NewProp_Phase, TEXT("Category"), TEXT("Bobbing"));
 	MetaData->SetValue(NewProp_Phase, TEXT("ModuleRelativePath"), TEXT("Bob.h"));
-	...
 }
 ```
 
