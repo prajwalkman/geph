@@ -7,7 +7,7 @@ SubTasks:
 ---------
 
 * Reverse engineer the `.fga` vector field file type (refer UE4 plugin for Maya).
-* Implement Vector Field generation by extending Actor class on BoundingBox.
+* Implement Vector Field generation by extending base mesh/box classes.
 * Implement a editor tab/window to expose all necessary features/options.
 
 Stretch goals:
