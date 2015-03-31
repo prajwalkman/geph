@@ -19,16 +19,15 @@ Stretch goals:
 Implementation:
 ---------------
 
-* First version will be a editor plugin based on the template of:
-https://wiki.unrealengine.com/Rama%27s_Vertex_Snap_Editor_Plugin#Core_of_Making_Your_Own_Editor_Mode
-This version will be authoring the vector field within the scene view.
-* Second version will use info from Twitch broadcast on UE4 editor extension to build a separate editor for this.
+* First version will be a editor plugin based on Rama's editor extension template. This version will be authoring the vector field within the scene view.
+* Second version will use info from Twitch broadcast on UE4 editor extension to build a separate editor window for this.
 * The actual generation will work by creating new classes deriving from `FBoxCenterAndExtent` (boundingBoxes), and `UStaticMesh` (primitives), and raymarching within the bounding box.
 
 
 References:
 -----------
 
+* Rama's editor extension template (https://wiki.unrealengine.com/Rama%27s_Vertex_Snap_Editor_Plugin#Core_of_Making_Your_Own_Editor_Mode)
 * Basic intro to gpu particles in UE (http://youtu.be/DcesEW380lc)
 * More detailed video of making and using vector fields (http://youtu.be/POyYZJWPVng)
 * A much longer video about extending the UE4 editor (http://youtu.be/zg_VstBxDi8)
