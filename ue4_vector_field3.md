@@ -27,8 +27,8 @@ Implementation:
 References:
 -----------
 
-* Rama's editor extension template (https://wiki.unrealengine.com/Rama%27s_Vertex_Snap_Editor_Plugin#Core_of_Making_Your_Own_Editor_Mode)
-* Basic intro to gpu particles in UE (http://youtu.be/DcesEW380lc)
-* More detailed video of making and using vector fields (http://youtu.be/POyYZJWPVng)
-* A much longer video about extending the UE4 editor (http://youtu.be/zg_VstBxDi8)
-* UE4 Maya Velocity Grid exporter (UnrealEngine\Engine\Extras\MayaVelocityGridExporter\)
+* [Rama's editor extension template] (https://wiki.unrealengine.com/Rama%27s_Vertex_Snap_Editor_Plugin#Core_of_Making_Your_Own_Editor_Mode)
+* [Basic intro to gpu particles in UE] (http://youtu.be/DcesEW380lc)
+* [More detailed video of making and using vector fields] (http://youtu.be/POyYZJWPVng)
+* [A much longer video about extending the UE4 editor] (http://youtu.be/zg_VstBxDi8)
+* [UE4 Maya Velocity Grid exporter] (UnrealEngine\Engine\Extras\MayaVelocityGridExporter\)
